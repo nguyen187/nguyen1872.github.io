@@ -915,6 +915,14 @@ button {
   left: 15px;
   right: unset
 }
+.label4{
+  color: #000;
+  font-weight: lighter;
+  
+}
+.label4 a:hover {
+  color: #028ef9
+}
 
 .entry-category {
   display: flex;
@@ -1378,7 +1386,7 @@ button {
 }
 
 .social-bg .codepen a,
-.social-bg-hover .codepen a:hover {
+.social-bg-                                .codepen a:hover {
   background-color: #000
 }
 
