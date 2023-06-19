@@ -62,7 +62,7 @@ _WidgetManager._SetDataContext([{
                 'shareMessage': 'BlogThis!',
                 'target': 'blog'
             }, {
-                'name': 'Twitter',
+                'name': 'Linkedin',
                 'key': 'twitter',
                 'shareMessage': 'Share to Twitter',
                 'target': 'twitter'
