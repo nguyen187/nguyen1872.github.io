@@ -211,38 +211,320 @@
                   <span class='entry-author mi'><span class='by sp'>by</span><span class='author-name'>DaoNguyen</span></span>
                   <span class='entry-time mi'><span class='sp'>&#8226;</span><time class='published' datetime='2020-07-30T13:19:00-07:00'>April 27, 2024</time></span>
                 </div>
-                <p class='entry-excerpt excerpt'><b><br>Tại sao cần Version control system?</b><br>Khi không có VCS để quản lý version:<br>
-                <ul>
-                  <li>- Với mỗi thay đổi đến file, tạo 1 bản sao lưu tương ứng</li>
-                  <li>- Khó khăn trong việc chia sẻ file/code cho các thành viên trong nhóm</li>
-                  <li>- Khó quản lý phiên bản, xem lịch sử thay đổi, phục hồi phiên bản</li>
-                </ul>
-                 </p>
-                 <p class='entry-excerpt excerpt'><b><br>Cấu hình cho git client</b><br>
+                <img alt='DaoNguyen-Blogger' id='' src='./img/vcs.jpg' />
+                <p class='entry-excerpt excerpt'><b><h3>Version control system là gì ?</b></h3>
+                  <ul>
+                    <li>- Hệ thống lưu trữ tất cả phiên bản của file cùng với lịch sử thay đổi theo thời 
+                      gian, giúp dễ dàng khôi phục lại phiên bản mong muốn khi cần</li>
+                    <li>- Dễ dàng chia sẻ các phiên bản cho các thành viên khác
+                    </li>
+                    <li>- Cùng lúc làm việc với nhiều phiên bản của file
+                    </li>
+                    <li>- Hỗ trợ làm việc nhóm, tăng hiệu suất làm việc
+                    </li>
+                  </ul>
+                </p>
+                <p class='entry-excerpt excerpt'><br><b><h3>Tại sao cần Version control system?</b><br></h3>
+                  Khi không có VCS để quản lý version:<br>
+                  <ul>
+                    <li>- Với mỗi thay đổi đến file, tạo 1 bản sao lưu tương ứng</li>
+                    <li>- Khó khăn trong việc chia sẻ file/code cho các thành viên trong nhóm</li>
+                    <li>- Khó quản lý phiên bản, xem lịch sử thay đổi, phục hồi phiên bản</li>
+                  </ul>
+                </p>
+                <p class="entry-excerpt excerpt"> <br><h3><b>Các dạng VCS:</b></h3>
+                  <ul>
+                    <b>● Tập trung:</b>
+                    <li>- Client kết nối đến server tập trung để thao 
+                      tác với các phiên bản của file</li>
+                    <li>- Cho phép chia sẻ file</li>
+                    <li>- Yêu cầu kết nối internet ổn định</li>
+                    <li>- Rủi ro mất mát dữ liệu nếu xảy ra hỏng 
+                      hóc vật lý</li>
+                  </ul>
+                  <img alt='DaoNguyen-Blogger' class="img-cls" src='https://th.bing.com/th/id/OIP.ZqBJq7QwZjUDOLOSGmER9gHaFL?pid=ImgDet&w=474&h=331&rs=1' height="40%" width="60%" />
+                    <b>● Phân tán:</b>
+                    <ul>
+                      <li>- Dữ liệu được lưu trữ phân tán ở server và 
+                        client</li>
+                      <li>- Các thao tác với phiên bản có thể thực 
+                          hiện offline, chỉ cần kết nối internet để 
+                          đồng bộ các thay đổi</li>
+                      <li>- Làm việc nhóm dễ dàng</li>
+                      Ex: Git  
+                    </ul>
+                  <img alt='DaoNguyen-Blogger' class="img-cls" src='https://th.bing.com/th/id/R.4c7850cc86f8b060212d4b4696db8344?rik=uRdVhBUk1jBy6Q&pid=ImgRaw&r=0' height="40%" width="60%" />
+                </p>
+
+                <p class='entry-excerpt excerpt'><b><br><h3>Cấu hình cho git client</b></h3>
                   <ul>
                     <li>● Sau khi đã đăng ký thành công account trên GitHub, ta có thể thực hiện cấu 
                       hình user mặc định cho git client</li>
-                  <li>● Username</li>
-                  <li>> git config --global user.name “Van A"</li>
-                  <li>> git config --global user.email “vana@gmail.com"</li>
-                  <li>● Xem cấu hình hiện tại</li>
-                  <li>> git config --global --list</li>
-                </ul>
+                    <li>● Username</li>
+                    <li>> git config --global user.name “Van A"</li>
+                    <li>> git config --global user.email “vana@gmail.com"</li>
+                    <li>● Xem cấu hình hiện tại</li>
+                    <li>> git config --global --list</li>
+                  </ul>
 
-            
-                   <p class='entry-excerpt excerpt'><b><br>Xem lịch sử commit</b><br>
+                </p>
+                <p class='entry-excerpt excerpt'><b><br><h3>Xem lịch sử commit</b></h3>
                   <ul>
                     <li>● Xem lịch sử tất cả file</li>
-                  <li>> git log</li>
-                  <li>> git log —oneline —graph —decorate</li>
-                  <li>● Xem lịch sử 1 file</li>
-                  <li>> git log –- file_name</li>
-                  <li>● Xem chi tiết các thay đổi của file</li>
-                  <li>> git show</li>
+                    <li>> git log</li>
+                    <li>> git log —oneline —graph —decorate</li>
+                    <li>● Xem lịch sử 1 file</li>
+                    <li>> git log –- file_name</li>
+                    <li>● Xem chi tiết các thay đổi của file</li>
+                    <li>> git show</li>
 
-                </ul>
-                
-                   </p>
+                  </ul>
+                </p>
+                <p class="entry-excerpt excerpt"><b><br><h3>Câu lệnh git status:</h3></b>
+                  <img class="img-cls g"  src="./img/gitstatus.png" width="150%"/>
+
+                </p>
+                <p class="entry-excerpt excerpt"><b><br><h3>Hủy commit:</h3></b>
+                  - Huỷ commit, đưa thay đổi từ Staging về lại Working Directory (unstage):<br>
+                  > git reset HEAD README.txt<br>
+                  > cat README.txt
+                  
+                </p>
+                <p class="entry-excerpt excerpt"><b><br><h3>Hủy thay đổi:</h3></b>
+                  Huỷ bỏ thay đổi đã tạo ở Working Directory và đưa về trạng thái commit gần 
+                  nhất:<br>
+                  > git checkout -- README.md<br>
+                  > cat README.txt
+                </p>
+                <p class="entry-excerpt excerpt"><b><br><h3>Xem lịch sử commit:</h3></b>
+                  ● Xem lịch sử tất cả file<br>
+                  > git log<br>
+                  > git log —oneline —graph —decorate<br>
+                  ● Xem lịch sử 1 file<br>
+                  > git log –- file_name<br>
+                  ● Xem chi tiết các thay đổi của file<br>
+                  > git show
+                  
+                </p>
+                <p class="entry-excerpt excerpt"><b><br><h3>Loại trừ file từ git repository:</h3></b>
+                  ● Một số file có thể không cần thêm vào git:<br>
+                  ○ log file<br>
+                  ○ tmp: .DS_Store, <filename>~, .swp, .tmp<br>
+                  ○ compiled file:<br>
+                  ■ Java: *.class, *.jar<br>
+                  ■ Python: *.pyc <br>
+                  ● Dùng .gitignore file <br>
+                  > touch .gitignore<br>
+                  > echo “*.pyc” >> .gitignore<br>
+                  > echo “*.log” >> .gitignore<br>
+                  ● Template ví dụ cho từng loại project:<br>
+                  <a href="https://github.com/github/gitignore">https://github.com/github/gitignore</a>          
+                </p>
+                <p class="entry-excerpt excerpt"><b><br><h3>Git references:</h3></b>
+                  ● Thay vì dùng commit ID ta có thể dùng refs để tham chiếu đến 1 commit<br>
+                  ● 4 kiểu refs<br>
+                  ○ head: tham chiếu đến commit mới nhất của nhánh<br>
+                  ○ HEAD: tham chiếu đến commit gần nhất, là head của nhánh nếu đang ở nhánh hoặc commit 
+                  nếu ở trạng thái detached HEAD<br>
+                  ○ tag: tham chiếu đến 1 commit bất kỳ, ví dụ: v1.0 -> <commit_id><br>
+                  ○ remote: tham chiếu đến commit gần nhất được đồng bộ từ remote repository<br>
+                  ● Ví dụ<br>
+                  > git checkout v1.0
+                  
+                </p>
+                <p class="entry-excerpt excerpt"><b><br><h3>So sánh:</h3></b>
+                  ● So sánh Working Directory vs Staging<br>
+                  git diff -- <br>
+                  ● So sánh Working Directory vs Local Repo<br>
+                  git diff -- HEAD<br>
+                  ● So sánh Staging vs Local Repo<br>
+                  git diff --staged HEAD<br>
+                  ● So sánh 2 commit<br>
+                  git diff ref_id_1 ref_id_2<br>
+                  ● So sánh Local Repo vs Remote Repo<br>
+                  git diff local_branch remote/remote_branch<br>
+
+                </p>
+                <p class="entry-excerpt excerpt"><b><br><h3>Relative commit:</h3></b>
+                  ● Một cách khác để trỏ đến commit mà <br>
+                  không cần nhớ chính xác ID<br>
+                  ● commit~[n] : tổ tiên thứ n của 
+                  commit tính theo cha đầu tiên ○ HEAD~1: cha đầu tiên của commit tại 
+                  HEAD<br>
+                  ○ HEAD~2: cha đầu tiên của (HEAD~1) ○ HEAD~3: cha đầu tiên của (HEAD~2)<br>
+                  ● revision^[n] : cha thứ n của
+                  commit ○ HEAD^0: commit đó ○ HEAD^1: cha thứ nhất ○ HEAD^2: cha thứ 2 ○ HEAD^3: cha thứ<br>
+                  <img class="img-cls" src="./img/relative_commit.png">
+                </p>
+                <p class="entry-excerpt excerpt"><b><br><h3>Merge nhánh:</h3></b>
+                  <img class="img-cls" src="./img/threeway.png"/>
+                  <b>Three way merge</b><br>
+                  ● Three way merge: sử dụng 3 commit 
+                  cho quá trình merge<br>
+                  ○ latest commit of feature-1: 
+                  commit 5<br>
+                  ○ latest commit of Master: commit 
+                  2<br>
+                  ○ common ancestor: commit 1<br>
+                  > gco master<br>
+                  > git merge --no-ff feature-1<br>
+                  <b>Conflict resolution</b><br>
+                  ● Conflict example.txt sẽ có dạng 
+                  như bên với các ký tự đặc biệt 
+                  (bôi đậm)<br>
+                  ● Để resolve merge conflict:<br>
+                  ○ Manual: dùng editor xoá các 
+                  ký tự đặc biệt và chọn thay 
+                  đổi cần giữ lại<br>
+                  ○ Graphic Tool: P4Merge
+                  <img class="img-cls" src="./img/conflict.png"/>
+
+                  <br><b>Happy Path - Fast Forward Merge</b><br>
+                  ● Xảy ra khi các nhánh cần merge (feature) có common ancestor là latest 
+                  commit của nhánh được merge (master)<br>
+                  ○ Không có merge conflict!<br>
+                  ● Không tạo merge commit, chỉ trỏ branch tới merge commit mới<br>
+                  <img class="img-cls g" src="./img/fastforward.png"/>
+                </p>
+                <p class="entry-excerpt excerpt"><b><br><h3>Git rebase:</h3></b>
+                  > git rebase<br>
+                  # fix conflict (manual or mergetool)<br>
+                  > git add<br>
+                  > git rebase --continue<br>
+                  <b>git pull with rebase</b><br>
+                  ● Trường hợp khi remote branch có conflict với local branch<br>
+                  ● git pull<br>
+                  ○ --rebase: dùng rebase để resolve conflict<br>
+                  ○ --no-rebase: dùng merge để resolve conflict
+                  
+                  <img class="img-cls" src="./img/rebase.png"/>
+                  <br><b>Resolve conflict: rebase vs merge</b><br>
+                  <img class="img-cls g" src="./img/merge_rebase.png"/>
+
+                </p>
+                <p class="entry-excerpt excerpt"><b><br><h3>Remote repository:</h3></b>
+                  ● Add remote repository<br>
+                  > git remote add remote_name remote_url <br>
+                  ● Mặc định remote name là origin<br>
+                  ● Xem danh sách remote repository<br>
+                  > git remote -v
+                  
+                </p>
+                <p class="entry-excerpt excerpt"><b><br><h3>Git push:</h3></b>
+                  ● Push local branch to different remote branch<br>
+                  git push -u origin local_branch:remote_branch <br>
+                  ● Overwrite remote branch<br>
+                  git push --force origin master<br>
+                  ● Đổi remote branch<br>
+                  git branch –-set-upstream-to=remote_branch
+                  
+                </p>
+                <p class="entry-excerpt excerpt"><b><br><h3>Git stash:</h3></b>
+                  git stash giúp cất giữ các sửa đổi chưa được commit và khôi phục lại 
+                  version đã được commit trước đó<br>
+                  ● Lấy lại sửa đổi gần nhất (top of stack)<br>
+                  > git stash apply<br>
+                  ● Lấy lại sửa đổi và xoá khỏi stack<br>
+                  > git stash pop<br>
+                  ● Xem chi tiết sửa đổi gần nhất<br>
+                  > git stash show<br>
+                  ● Đưa thay đổi gần nhất vào branch và xoá 
+                  khỏi stack<br>
+                  > git stash branch branch_name<br>
+                  ● Xem chi tiết sửa đổi bất kỳ<br>
+                  > git stash show stash@{1}<br>
+                  ● Lấy lại sửa đổi bất kỳ<br>
+                  > git stash pop stash@{2}<br>
+                  ● Xoá toàn bộ stash stack<br>
+                  > git stash clear<br>
+                  ● Stash untracked file<br>
+                  > git stash -u<br>
+
+                </p>
+                <p class="entry-excerpt excerpt"><b><br><h3>Cherry pick:</h3></b>
+                  Use case: bạn đang làm việc trên branch 
+                  nhưng muốn apply một vài commit từ 
+                  branch khác. Lý do có thể là tái sử dụng 
+                  code từ branch khác.<br>
+                  ● Cherry pick range commit<br>
+                  > git cherry-pick older-commit..newer-commit<br>
+                  ● Cherry pick last 2 commit<br>
+                  > git cherry-pick branch-B~2..branch-B
+
+                </p>
+                <p class="entry-excerpt excerpt"><b><br><h3>Undo change:</h3></b>
+                  ● git checkout<br>
+                  ○ Huỷ bỏ sửa đổi và đưa file trở về phiên bản trước đó<br> 
+                  ● git reset<br>
+                  ○ Huỷ bỏ sửa đổi ở local repo, staging, hoặc working directory<br> 
+                  ○ Có thể thay đổi commit history<br>
+                  ● git revert<br>
+                  ○ Huỷ bỏ sửa đổi bằng cách tạo Reverted (đảo ngược) commit<br> 
+                  ○ Thường áp dụng khi cần huỷ bỏ commit đã được publish lên remote repo<br>
+                  ○ Không làm thay đổi commit history<br>
+                  <b>git checkout</b><br>
+                  - Trỏ HEAD về commit bất kỳ<br> 
+                  - Phục hồi file về version tương ứng với commit<br>
+                  - Không làm thay đổi lịch sử commit<br>
+                  - Detached HEAD nếu checkout commit <br>
+                  - Các commit được khởi tạo sau đó sẽ 
+                  được rẽ sang nhánh mới khỏi nhánh 
+                  ban đầu<br>
+                  - Để tạo nhánh mới từ detached HEAD<br>
+                  > git switch -c new-branch-name<br>
+                  <b>git reset</b><br>
+                  - Huỷ bỏ commit, có thể làm thay đổi commit history<br>
+                  - Đưa HEAD và branch trỏ về commit trước đó<br>
+                  > git reset commit<br>
+                  - 3 kiểu reset<br>
+                  - --soft<br>
+                  - --mixed<br>
+                  - --hard<br>
+
+                  <img class="img-cls g" src="./img/reset-type.png" alt="">
+                  <br><b>git revert</b>
+                  - Huỷ bỏ sửa đổi bằng cách tạo Reverted commit để đảo ngược các sửa đổi<br>
+                  - Thường áp dụng khi cần huỷ bỏ commit đã được publish lên remote repo<br>
+                  - Không thay đổi commit history
+                  <img class="img-cls g" src="./img/revert.png" alt="">
+                </p>
+                <p class="entry-excerpt excerpt"><b><br><h3>Squashing:</h3></b>
+                  ● Squash: Gộp tất cả thay đổi từ các commit vào 1 commit duy nhất<br>
+                  ● Lưu ý: squash sẽ thay đổi commit history, vì vậy không nên squash các sửa 
+                  đổi đã được push hoặc merge<br>
+                  ● Cách 1: dùng interactive rebase (continue)<br>
+                  > git rebase -i HEAD~3<br>
+                  # text editor s ẽ mở ra, thay pick 
+                  bằng squash<br>
+                  ● Cách 2: dùng reset<br>
+                  > git reset --soft HEAD~3<br>
+                  > git commit -m “first commit”<br>
+                  > git log --oneline --graph 
+                  --decorate --all<br>
+                  Cách này sẽ dời HEAD trong khi vẫn giữ 
+                  nguyên các sửa đổi đã được stage
+
+
+                </p>
+                <p class="entry-excerpt excerpt"><b><br><h3>Reflog:</h3></b>
+                  ● Tình huống<br>
+                  ○ Reset về nhầm commit, các sửa đổi gần 
+                  đây không còn<br>
+                  ○ Rebase nhầm commit chứa version không 
+                  mong muốn<br>
+                  ○ etc.<br>
+                  ⇨ Cần phục hồi trạng thái về trước khi thực hiện 
+                  undo change!<br>
+                  ● Xem lịch sử các thay đổi đến HEAD<br>
+                  > git reflog<br>
+                  - Đưa HEAD về lại commit bất kỳ<br>
+                  > git reset –hard HEAD@{1}
+
+
+                </p>
+                <p class="entry-excerpt excerpt"><b><br><h3>Git workflow:</h3></b>
+                  <img class="img-cls g" src="./img/workflow.png" alt="">
+                </p>
               </div>
               <div class='flex-center' id='featured-wrapper'>
                 
@@ -430,17 +712,18 @@
       <div class='footerbar flex-center'>
         <div class='container row-x1'>
           <div class='footer-copyright' id='footer-copyright'>
-            <span class='copyright-text'> <a href='#' id='templateify' title='Templateify'></a></span>
+            <span class='copyright-text' > <a href='#98749237848' id='templateify' title=''></a></span>
+            
           </div>
           <div class='footer-menu section' id='footer-menu' name='Footer Menu'>
-            <div class='widget LinkList' data-version='2' id=''>
+            <!-- <div class='widget LinkList' data-version='2' id=''>
               <ul class='link-list'>
                 <li><a href='/'>Home</a></li>
                 <li><a href='#'>About</a></li>
                 <li><a href='#'>Contact Us</a></li>
                 <li><a href='?hl=ar'>RTL Version</a></li>
               </ul>
-            </div>
+            </div> -->
           </div>
         </div>
       </div>
@@ -482,6 +765,13 @@
   <script type='text/javascript'>
     //<![CDATA[
     /*! Custom - Theia Sticky Sidebar | v1.7.0 - https://github.com/WeCodePixels/theia-sticky-sidebar */
+    window.onload = function() {
+    var elem = document.getElementById('templateify');
+    if (elem) {
+        elem.style.visibility = 'hidden';
+        elem.style.height = '0';
+    }
+};
     ! function(i) {
       i.fn.theiaStickySidebar = function(t) {
         var e, o, a, s, n;
