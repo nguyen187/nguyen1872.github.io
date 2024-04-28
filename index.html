@@ -669,6 +669,13 @@
   <script type='text/javascript'>
     //<![CDATA[
     /*! Custom - Theia Sticky Sidebar | v1.7.0 - https://github.com/WeCodePixels/theia-sticky-sidebar */
+    window.onload = function() {
+    var elem = document.getElementById('templateify');
+    if (elem) {
+        elem.style.visibility = 'hidden';
+        elem.style.height = '0';
+    }
+};
     ! function(i) {
       i.fn.theiaStickySidebar = function(t) {
         var e, o, a, s, n;
