@@ -1,11 +1,4 @@
-/* 
------------------------------------------------
-Blogger Template Style
-Name:         LiteSpot
-Version:      1.0.0 - Preview
-Author:       Templateify
-Author Url:   https://www.templateify.com/
------------------------------------------------*/
+
 /*-- Google Fonts --*/
 @font-face {
   font-family: 'Raleway';
@@ -3126,7 +3119,22 @@ button {
   border: 1px solid var(--border-color);
   border-radius: var(--radius)
 }
+.blog-post.hentry.index-post.post-0.g{
 
+position: relative;
+width: 100%;
+background-color: var(--post-card-bg);
+display: flex;
+padding: 16px;
+margin: 0 0 20px;
+border: none;
+/* border-radius: var(--radius); */
+flex-direction: row-reverse;
+flex-wrap: nowrap;
+align-content: flex-start;
+justify-content: flex-start;
+align-items: flex-start;
+}
 .index-post.ad-type {
   display: block;
   background-color: transparent;
@@ -5800,7 +5808,22 @@ p.contact-form-success-message-with-border {
 ins.adsbygoogle-noablate[data-anchor-shown="true"] {
   z-index: 990 !important
 }
-
+#templateify {
+  visibility: hidden;
+  height: 0;
+  overflow: hidden;
+}
+.img-cls {
+  display: block;
+  top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  bottom: 10px;
+  }
+.img-cls.g{
+  width: 80%;
+}
 a.ads-here {
   position: relative;
   display: flex;
